@@ -1,1 +1,1 @@
-export type NetworkId = "mainnet-alpha" | "goerli-alpha";
+export type NetworkId = "mainnet-alpha" | "sepolia-alpha";

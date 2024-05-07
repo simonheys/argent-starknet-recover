@@ -16,6 +16,7 @@ import { equalSigner, getDefaultSigners } from "./genSigners";
 import { detectAccountIssues, fixAccountIssues } from "./issues";
 import { ec } from "starknet-410";
 import { getRpcNodeUrlsForNetworkId } from "./getProvider";
+import { TOKENS } from "./tokens";
 
 /** Helps with debugging payloads containing BigInt */
 (BigInt.prototype as any).toJSON = function () {
@@ -44,7 +45,7 @@ program.parse();
   const spinner = ora();
 
   const mainnetRpcNodeUrls = getRpcNodeUrlsForNetworkId("mainnet-alpha");
-  const testnetRpcNodeUrls = getRpcNodeUrlsForNetworkId("goerli-alpha");
+  const testnetRpcNodeUrls = getRpcNodeUrlsForNetworkId("sepolia-alpha");
   spinner.info(`Mainnet RPC: ${mainnetRpcNodeUrls.join(", ")}`);
   spinner.info(`Testnet RPC: ${testnetRpcNodeUrls.join(", ")}`);
 

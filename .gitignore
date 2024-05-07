@@ -3,3 +3,4 @@ dist
 yarn-error.log
 bin
 .env
+./tokens.json

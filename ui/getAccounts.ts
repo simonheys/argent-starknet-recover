@@ -23,7 +23,7 @@ export const getAccountsAndNetwork = async (ora: Ora) => {
         message: "Choose network",
         choices: [
           { title: "SN Mainnet", value: "mainnet-alpha" },
-          { title: "SN Testnet", value: "goerli-alpha" },
+          { title: "SN Testnet", value: "sepolia-alpha" },
         ],
       },
       {

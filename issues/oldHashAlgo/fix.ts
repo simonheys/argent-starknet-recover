@@ -35,7 +35,9 @@ export const fix = async (
           "Account cant be controlled with the selected private key or seed"
         );
       }
-      const provider = new Provider({ network: networkId });
+      const legacyNetworkId =
+        networkId === "sepolia-alpha" ? "goerli-alpha" : networkId;
+      const provider = new Provider({ network: legacyNetworkId });
       const account = new SNAccount(provider, a.address.toLowerCase(), keyPair);
 
       const call = {

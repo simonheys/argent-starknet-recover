@@ -1,4 +1,4 @@
-import TOKENS from "./default-tokens.json";
+import { TOKENS } from "./tokens";
 import { encode, uint256 } from "starknet-410";
 import { formatTokenBalance } from "./formatTokenBalance";
 import { getRpcBatchProviderForNetworkId } from "./getProvider";

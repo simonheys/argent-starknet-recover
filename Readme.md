@@ -9,12 +9,12 @@ You can then choose to fix issues and recover your funds to a new account addres
 It is simplest to download the latest release from the [releases page](https://github.com/argentlabs/argent-starknet-recover/releases).
 After downloading the binary matching your machine you can run it inside a terminal.
 
-If you have `node`, `nvm` and `yarn` installed you can also clone this repo and run the following:
+If you have `node`, `nvm` and `pnpm` installed you can also clone this repo and run the following:
 
 ```bash
 $ nvm use
-$ yarn
-$ yarn start
+$ pnpm
+$ pnpm start
 ```
 
 **Use at your own risk**
@@ -22,3 +22,11 @@ $ yarn start
 ## Debugging with VSCode
 
 You can use the Run and Debug feature to debug with VSCode - good luck!
+
+## Update tokens
+
+Download current `tokens.json` from the token info API then run the script to filter listed tokens. These will be used to discover token balances.
+
+```bash
+$ pnpm gen:tokens
+```

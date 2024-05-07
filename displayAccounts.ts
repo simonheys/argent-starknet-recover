@@ -1,5 +1,5 @@
 import { Account } from "./ui/pickAccounts";
-import TOKENS from "./default-tokens.json";
+import { TOKENS } from "./tokens";
 import { omit } from "lodash";
 
 export function display(accounts: Account[]) {

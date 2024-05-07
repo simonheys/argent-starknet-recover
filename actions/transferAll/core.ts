@@ -2,7 +2,7 @@ import { utils } from "ethers";
 import { num, CallData } from "starknet";
 import { number, uint256 } from "starknet-410";
 import { Account } from "../../ui/pickAccounts";
-import TOKENS from "../../default-tokens.json";
+import { TOKENS } from "../../tokens";
 import { Ora } from "ora";
 import { oraLog } from "../../oraLog";
 import { estimateFee, execute } from "../../execute";

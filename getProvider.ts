@@ -13,9 +13,9 @@ export const defaultRpcNodeUrls: Record<NetworkId, string[]> = {
     "https://starknet-mainnet.public.blastapi.io",
     "https://rpc.starknet.lava.build",
   ],
-  "goerli-alpha": [
-    "https://starknet-testnet.public.blastapi.io",
-    "https://rpc.starknet-testnet.lava.build",
+  "sepolia-alpha": [
+    "https://starknet-sepolia.public.blastapi.io",
+    "https://rpc.starknet-sepolia.lava.build",
   ],
 };
 
@@ -58,7 +58,7 @@ export const getRpcBatchProviderForNetworkId = (networkId: NetworkId) => {
   const multicall = new RpcBatchProvider({
     nodeUrl,
     batchInterval: 500,
-    maxBatchSize: 10,
+    maxBatchSize: 20,
     headers: argentCliHeaders,
   });
   return multicall;

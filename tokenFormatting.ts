@@ -1,4 +1,4 @@
-import TOKENS from "./default-tokens.json";
+import { TOKENS } from "./tokens";
 import { NetworkId } from "./types";
 
 export const formatTokenBalance = (
